@@ -170,3 +170,24 @@ body{
 		}
 	}
 }
+
+.box-3{
+	background-color: $color_c;
+	width: 100%;
+	height: auto;
+	position: relative;
+	display: block;
+	padding: 40px;
+	.caja-c{
+		display: inline-flex;
+		text-align: center;
+		.imagenes{
+			display: inline-flex;
+			background-color: $color_f;
+			border-radius: 200px;
+			width: auto;
+			height: auto;
+			padding: 20px;
+		}
+	}
+}

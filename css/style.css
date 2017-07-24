@@ -5937,4 +5937,22 @@ body {
       .box-2 .box-2 hr {
         float: none; } }
 
+.box-3 {
+  background-color: #3F190F;
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+  padding: 40px; }
+  .box-3 .caja-c {
+    display: inline-flex;
+    text-align: center; }
+    .box-3 .caja-c .imagenes {
+      display: inline-flex;
+      background-color: #EAA772;
+      border-radius: 200px;
+      width: auto;
+      height: auto;
+      padding: 20px; }
+
 /*# sourceMappingURL=style.css.map */
