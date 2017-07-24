@@ -1,0 +1,151 @@
+body{
+	font-family: $body_font;
+}
+
+.navbar{
+	background-color: $color_c;	
+	width: 100%;
+	.container-fluid{
+		span{
+			background-color: $color_a;
+		}		
+		.navbar-collapse{
+		margin-left: 30%;			
+			a{
+				color: $color_a;
+				margin-left: 20px;				
+			}
+		}
+	}
+}
+
+.sliders{
+	width: 100%;
+	height: auto;
+	margin-top: 50px;
+}
+
+.box{
+	background-color: $color_e;
+	width: 100%;
+	height: auto;
+	position: relative;
+	display: inline-flex;
+	padding: 40px;
+	img{
+		border: 9px solid $color_f;
+		margin-top: -130px;
+		margin-bottom: 20px;
+	}
+	h2{
+		font-size: 20px;
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+	.btn{
+		background-color: $color_f;
+		width: 120px;
+		height: auto;
+		padding: 10px;
+		margin-top: 30px;
+		margin-bottom: 20px; 
+	}
+	@media (max-width: 425px){
+		.box{
+			display: block;			
+			img{
+				width: 180px;
+				height: 180px;
+				margin-top: 5px;
+			}			
+		}
+	}	
+}
+
+.box-1{
+	background-color: $color_a;
+	width: 100%;
+	height: auto;
+	position: relative;
+	display: inline-flex;
+	padding: 40px;
+	.caja{
+		margin-right: 50px;	
+		img{
+			width: 800px;
+			height: 300px;		
+			border-radius: 7px;
+		}
+	}
+	h1{
+		text-align: center;
+		color: $color_g;
+		margin-bottom: 40px;
+		font-weight: 300;
+	}
+	li{
+		list-style: none;
+		margin-left: -40px;
+		i{
+			margin-right: 10px;
+			font-size: 18px;
+			color: $color_h;
+		}
+	}
+	@media (max-width: 425px){
+		.box-1{
+			display: block;
+			.caja{
+				width: 100%;
+				img{
+					width: 500px;
+					height: 200px;
+				}
+			}
+			li{
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+.box-2{
+	background-color: $color_d;
+	width: 100%;
+	height: auto;
+	position: relative;
+	display: inline-flex;
+	padding: 40px;
+	color: $color_e;
+	.caja-a{
+		margin-right: 50px;
+		hr{
+			width: 80%;
+			float: right;
+			margin-bottom: 30px;
+		}
+		p{
+			margin-top: 70px;
+		}
+		img{
+			border-radius: 7px;
+			float: left;
+			margin-bottom: 20px; 		
+		}		
+	}
+	.caja-b{
+		hr{
+			width: 80%;
+			float: left;
+			margin-bottom: 30px;
+		}
+		p{
+			margin-top: 70px;
+		}
+		img{
+			border-radius: 7px;
+			float: right; 
+			margin-bottom: 20px;
+		}		
+	}
+}
