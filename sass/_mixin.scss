@@ -1,0 +1,17 @@
+@mixin bases(){
+	width: 100%;
+	height: auto;
+	position: relative;
+	display: inline-flex;
+	padding: 40px;
+}
+
+@mixin bases_a(){
+	background-color: $color_e;
+	border-radius: 100px;
+	width: 100px;
+	height: 100px;
+	padding: 7px;
+	border: 5px solid $color_i;
+	box-shadow: $shadows;
+}

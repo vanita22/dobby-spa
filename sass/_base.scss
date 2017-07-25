@@ -37,15 +37,12 @@ body{
 
 .box{
 	background-color: $color_e;
-	width: 100%;
-	height: auto;
-	position: relative;
-	display: inline-flex;
-	padding: 40px;
+	@include bases();
 	img{
 		border: 9px solid $color_f;
 		margin-top: -130px;
 		margin-bottom: 20px;
+		box-shadow: $shadows;
 	}
 	h2{
 		font-size: 20px;
@@ -58,7 +55,8 @@ body{
 		height: auto;
 		padding: 10px;
 		margin-top: 30px;
-		margin-bottom: 20px; 
+		margin-bottom: 20px;
+		box-shadow: $shadows; 
 	}
 	@media (max-width: 425px){
 		.box{
@@ -74,17 +72,14 @@ body{
 
 .box-1{
 	background-color: $color_a;
-	width: 100%;
-	height: auto;
-	position: relative;
-	display: inline-flex;
-	padding: 40px;
+	@include bases();
 	.caja{
 		margin-right: 50px;	
 		img{
 			width: 800px;
 			height: 300px;		
 			border-radius: 7px;
+			box-shadow: $shadows;
 		}
 	}
 	h1{
@@ -121,12 +116,8 @@ body{
 
 .box-2{
 	background-color: $color_d;
-	width: 100%;
-	height: auto;
-	position: relative;
-	display: inline-flex;
-	padding: 40px;
-	color: $color_e;
+	@include bases();
+	color: $color_j;
 	.caja-a{
 		margin-right: 50px;
 		text-align: right;
@@ -141,7 +132,8 @@ body{
 		img{
 			border-radius: 7px;
 			float: left;
-			margin-bottom: 20px; 		
+			margin-bottom: 20px;
+			box-shadow: $shadows; 		
 		}		
 	}
 	.caja-b{
@@ -157,6 +149,7 @@ body{
 			border-radius: 7px;
 			float: right; 
 			margin-bottom: 20px;
+			box-shadow: $shadows;
 		}		
 	}
 	@media (max-width: 425px){
@@ -188,7 +181,8 @@ body{
 	position: relative;
 	display: block;
 	padding: 40px;
-	color: $color_e;
+	color: $color_j;
+	border-top: 3px solid $color_e; 
 	.caja-c{
 		display: inline-flex;
 		text-align: center;
@@ -210,7 +204,7 @@ body{
 			i{
 				font-size: 50px;
 				float: left;
-				color: $color_f;
+				color: $color_i;
 				margin-right: 20px;
 			}
 		}
@@ -218,45 +212,34 @@ body{
 			width: 300px;
 			text-align: left;
 			padding: 20px;
-			margin-left: 20px;			
+			margin-left: 20px;
+			.email{
+				display: inline-flex;				
+				h5{
+				color: $color_i;
+				font-weight: 700;
+				margin-left: 10px;
+				margin-top: 0;				
+				}								 
+			}			
 		}		
 		.imagenes{
 			display: inline-flex;
 			margin-right: 60px;
 			#fa{
-				background-color: $color_e;
-				border-radius: 100px;
-				width: 100px;
-				height: 100px;
-				padding: 7px;
-				border: 5px solid $color_f;
+				@include bases_a();
 				margin-right: 15px; 
 			}
 			#go{
-				background-color: $color_e;
-				border-radius: 100px;
-				width: 100px;
-				height: 100px;
-				padding: 7px;
-				border: 5px solid $color_f;
+				@include bases_a();
 				margin-right: 15px; 
 			}
 			#ti{
-				background-color: $color_e;
-				border-radius: 100px;
-				width: 100px;
-				height: 100px;
-				padding: 7px;
-				border: 5px solid $color_f;
+				@include bases_a();
 				margin-right: 15px; 
 			}
 			#rs{
-				background-color: $color_e;
-				border-radius: 100px;
-				width: 100px;
-				height: 100px;
-				padding: 7px;
-				border: 5px solid $color_f; 
+				@include bases_a(); 
 			}
 		}
 	}
@@ -266,6 +249,9 @@ body{
 			text-align: center;
 			align-content: center;
 			width: 100%;
+			h2{
+				text-align: center;
+			}
 			.imagenes{
 				display: block;
 				text-align: center;
@@ -274,6 +260,7 @@ body{
 					width: 300px;
 					height: 300px;
 					margin-bottom: 30px;
+					margin-left: 40%;
 				}			
 			}
 			.caja-e{
@@ -291,11 +278,11 @@ body{
 			width: 100%;
 			p{
 				font-size: 10px;
-			}
-			
+			}			
 		}
 		hr{
-			width: 80%;			
+			width: 90%;
+			float: left;			
 		}
 	}
 }
